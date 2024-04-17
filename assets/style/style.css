@@ -74,6 +74,7 @@ input[type="color"] {
     width: 80%;
     height: 600px;
     border: 2px solid white;
+    transition: 1s;
 }
 
 textarea {
@@ -83,4 +84,19 @@ textarea {
     outline: none;
     overflow: auto;
     padding: 20px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 20px;
+    cursor: pointer !important;
+}
+
+textarea::-webkit-scrollbar-track {
+    box-shadow: indeset 0 0 5px black;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #36364C; 
+    border-radius: 10px;
+    cursor: pointer !important;
 }

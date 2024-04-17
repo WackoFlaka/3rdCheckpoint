@@ -6,9 +6,9 @@ export class Jot {
         this.title = data.title
         this.color = data.color
         this.body = data.body || ''
-        this.totalCharacters = data.totalCharacters
+        this.totalCharacters = data.totalCharacters || 0
         this.totalWords = data.totalWords
-        this.createdAt = new Date()
+        this.createdAt = data.createdAt ? new Date(data.createdAt) : new Date()
         this.lastAccessed = data.lastAccessed ? new Date(data.lastAccessed) : new Date()
     }
     
